@@ -22,4 +22,6 @@ To add entities that have a relationship the foreign key values need to be speci
 
 Once entities have been added, it is recommended to use [migrations](xref:core/managing-schemas/migrations/index) to apply changes. 
 
+See example https://www.youtube.com/watch?v=I2PImCrQWa4
+
 Alternatively, you can use `context.Database.EnsureCreated()` to create a new database containing the seed data, for example for a test database or when using the in-memory provider. Note that if the database already exists, `EnsureCreated()` will neither update the schema nor the seed data in the database.
