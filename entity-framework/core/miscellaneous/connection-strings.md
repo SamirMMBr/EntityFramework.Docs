@@ -27,7 +27,12 @@ Most database providers require some form of connection string to connect to the
 > [!TIP]  
 > The `providerName` setting is not required on EF Core connection strings stored in App.config because the database provider is configured via code.
 
-You can then read the connection string using the `ConfigurationManager` API in your context's `OnConfiguring` method. You may need to add a reference to the `System.Configuration` framework assembly to be able to use this API.
+You can then read the connection string using the `ConfigurationManager` API in your context's `OnConfiguring` method. You may need to add a reference to the `System.Configuration` framework assembly to be able to use this API. If necessary add the package NuGet 
+1. Right-click on Project
+2. Select Manager NuGet Package
+3. Find System. Configuration
+4. Select System. Configuration. ConfigurationManager by Microsoft
+5. Install
 
 ``` csharp
 public class BloggingContext : DbContext
